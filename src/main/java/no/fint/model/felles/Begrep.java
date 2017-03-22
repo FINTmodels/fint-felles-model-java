@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public abstract class Aktor {
-    private Kontaktinformasjon kontaktinformasjon;
-    private Adresse postadresse;
+public abstract class Begrep {
+    private Identifikator systemId;
+    private String kode;
+    private String navn;
+    private Periode gyldighetsperiode;
 }
