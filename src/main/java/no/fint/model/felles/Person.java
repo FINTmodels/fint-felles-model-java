@@ -4,16 +4,23 @@ package no.fint.model.felles;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import no.fint.model.felles.iso.Kjonn;
+import no.fint.model.relation.RelationType;
 
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper = true)
 public class Person extends Aktor {
-    public static final String RELASJON_PERSON_PERSONALRESSURS = "urn:fint.no:person:personalressurs:person.fodselsnummer:personalressurs.ansattnummer";
-    public static final String RELASJON_PERSON_KJONN = "urn:fint.no:person:kjonn:person.fodselsnummer:kjonn.systemid";
-    public static final String RELASJON_PERSON_STATSBORGERSKAP = "urn:fint.no:person:statsborgerskap:person.fodselsnummer:statsborgerskap.systemid";
+    public static final String REL_ID_PERSONALRESSURS = new RelationType.Builder()
+            .namespace("fint.no").relationName("personalressurs").main(Person.class, "fodselsnummer").relatedId("personalressurs.ansattnummer").buildTypeString();
+
+    public static final String REL_ID_KJONN = new RelationType.Builder()
+            .namespace("fint.no").relationName("kjonn").main(Person.class, "fodselsnummer").related(Kjonn.class, "systemid").buildTypeString();
+
+    public static final String REL_ID_STATSBORGERSKAP = new RelationType.Builder()
+            .namespace("fint.no").relationName("statsborgerskap").main(Person.class, "fodselsnummer").relatedId("statsborgerskap.systemid").buildTypeString();
 
     private Identifikator fodselsnummer;
     private Personnavn navn;
