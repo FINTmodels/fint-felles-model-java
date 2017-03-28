@@ -1,6 +1,7 @@
 package no.fint.model.felles;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -36,6 +37,7 @@ public class Person extends Aktor implements Identifiable {
         this.bostedsadresse = bostedsadresse;
     }
 
+    @JsonIgnore
     @Override
     public String getId() {
         return this.getFodselsnummer().getIdentifikatorverdi();
