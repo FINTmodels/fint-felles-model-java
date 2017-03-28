@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import no.fint.model.felles.iso.Kjonn;
+import no.fint.model.relation.Identifiable;
 import no.fint.model.relation.RelationType;
 
 import java.util.Date;
@@ -12,7 +13,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Person extends Aktor {
+public class Person extends Aktor implements Identifiable {
     public static final String REL_ID_PERSONALRESSURS = new RelationType.Builder()
             .namespace("fint.no").relationName("personalressurs").main(Person.class, "fodselsnummer").relatedId("personalressurs.ansattnummer").buildTypeString();
 
@@ -33,5 +34,10 @@ public class Person extends Aktor {
         this.navn = navn;
         this.fodselsdato = fodselsdato;
         this.bostedsadresse = bostedsadresse;
+    }
+
+    @Override
+    public String getId() {
+        return this.getFodselsnummer().getIdentifikatorverdi();
     }
 }
