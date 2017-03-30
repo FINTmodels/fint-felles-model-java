@@ -34,9 +34,4 @@ public class Person extends Aktor implements FintModel {
         this.fodselsdato = fodselsdato;
         this.bostedsadresse = bostedsadresse;
     }
-
-    @Override
-    public List<Relation> getRelations() {
-        return relasjoner;
-    }
 }
