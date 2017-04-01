@@ -13,7 +13,6 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class Person extends Aktor implements FintModel {
-
     public enum Relasjonsnavn {
         PERSONALRESSURS,
         KJONN,
@@ -37,6 +36,11 @@ public class Person extends Aktor implements FintModel {
         this.fodselsdato = fodselsdato;
         this.bostedsadresse = bostedsadresse;
         this.relasjoner = new ArrayList<>();
+    }
+
+    @Override
+    public String getId() {
+        return getFodselsnummer().getIdentifikatorverdi();
     }
 
     @Override
