@@ -3,7 +3,6 @@ package no.fint.model.felles;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import no.fint.model.relation.FintModel;
 import no.fint.model.relation.Relation;
 
@@ -12,7 +11,6 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Person extends Aktor implements FintModel {
 
@@ -35,5 +33,13 @@ public class Person extends Aktor implements FintModel {
         this.fodselsdato = fodselsdato;
         this.bostedsadresse = bostedsadresse;
         this.relasjoner = new ArrayList<>();
+    }
+
+    public Person() {
+        this.relasjoner = new ArrayList<>();
+    }
+
+    public void addRelasjon(Relation relation) {
+        this.relasjoner.add(relation);
     }
 }
