@@ -4,11 +4,13 @@ package no.fint.model.felles;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import no.fint.model.relation.Identifiable;
 
 import java.util.Date;
 
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Person extends Aktor implements Identifiable {
     public enum Relasjonsnavn {
