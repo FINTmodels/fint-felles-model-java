@@ -26,6 +26,10 @@ public class Person extends Aktor implements FintModel {
     private Adresse bostedsadresse;
     private List<Relation> relasjoner;
 
+    public Person() {
+        this.relasjoner = new ArrayList<>();
+    }
+
     public Person(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator fodselsnummer, Personnavn navn, Date fodselsdato, Adresse bostedsadresse) {
         super(kontaktinformasjon, postadresse);
         this.fodselsnummer = fodselsnummer;
@@ -35,10 +39,7 @@ public class Person extends Aktor implements FintModel {
         this.relasjoner = new ArrayList<>();
     }
 
-    public Person() {
-        this.relasjoner = new ArrayList<>();
-    }
-
+    @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
     }
