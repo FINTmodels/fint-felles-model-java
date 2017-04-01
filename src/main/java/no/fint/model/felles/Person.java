@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import no.fint.model.relation.FintModel;
 import no.fint.model.relation.Relation;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -33,5 +34,6 @@ public class Person extends Aktor implements FintModel {
         this.navn = navn;
         this.fodselsdato = fodselsdato;
         this.bostedsadresse = bostedsadresse;
+        this.relasjoner = new ArrayList<>();
     }
 }
