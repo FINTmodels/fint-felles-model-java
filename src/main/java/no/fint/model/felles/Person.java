@@ -1,6 +1,7 @@
 package no.fint.model.felles;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import no.fint.model.relation.FintModel;
@@ -43,6 +44,7 @@ public class Person extends Aktor implements FintModel {
         return getFodselsnummer().getIdentifikatorverdi();
     }
 
+    @JsonIgnore
     @Override
     public void addRelasjon(Relation relation) {
         this.relasjoner.add(relation);
