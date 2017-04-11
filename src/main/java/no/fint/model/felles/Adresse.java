@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class Adresse {
+    public enum Relasjonsnavn {
+        LAND
+    }
+
     private String adresse;
     private String postnummer;
     private String poststed;
