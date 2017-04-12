@@ -1,6 +1,6 @@
 # FINT felles informasjonsmodeller for Java
 
-*Siste version: 1.0.0-rc.2.18*
+*Siste version: 1.0.1-rc.1.0*
 
 Inneholder felles informasjonsmodeller
 
