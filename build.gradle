@@ -22,7 +22,7 @@ repositories {
     mavenCentral()
 }
 
-apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.4/dependencies.gradle'
+apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.5/dependencies.gradle'
 dependencies {
     compile('no.fint:fint-relation-model:0.0.21')
     compile('com.fasterxml.jackson.core:jackson-annotations:2.8.0')
@@ -34,5 +34,5 @@ task wrapper(type: Wrapper) {
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.4/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.5/bintray.gradle'
 }
