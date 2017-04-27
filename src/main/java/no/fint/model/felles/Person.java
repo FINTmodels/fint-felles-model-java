@@ -14,9 +14,9 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = true)
 public class Person extends Aktor implements Identifiable {
     public enum Relasjonsnavn {
-        PERSONALRESSURS,
+        STATSBORGERSKAP,
         KJONN,
-        STATSBORGERSKAP
+        PERSONALRESSURS
     }
 
     private Identifikator fodselsnummer;
