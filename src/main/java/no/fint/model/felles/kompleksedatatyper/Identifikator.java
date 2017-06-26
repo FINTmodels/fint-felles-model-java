@@ -1,4 +1,5 @@
-package no.fint.model.felles;
+package no.fint.model.felles.kompleksedatatyper;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,10 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
-public abstract class Begrep {
-    private Identifikator systemId;
-    private String kode;
-    private String navn;
+@EqualsAndHashCode
+public class Identifikator {
+    private String identifikatorverdi;
     private Periode gyldighetsperiode;
 }
+

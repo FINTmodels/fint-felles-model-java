@@ -4,37 +4,36 @@ package no.fint.model.felles;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import no.fint.model.felles.basisklasser.Aktor;
+import no.fint.model.felles.basisklasser.iso.Sprak;
+import no.fint.model.felles.kompleksedatatyper.Adresse;
+import no.fint.model.felles.kompleksedatatyper.Identifikator;
+import no.fint.model.felles.kompleksedatatyper.Personnavn;
 import no.fint.model.relation.Identifiable;
 
 import java.util.Date;
 
 @Data
-@NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class Person extends Aktor implements Identifiable {
-    public enum Relasjonsnavn {
-        STATSBORGERSKAP,
-        KJONN,
-        PERSONALRESSURS
-    }
-
     private Identifikator fodselsnummer;
     private Personnavn navn;
     private Date fodselsdato;
+    private String bilde;
     private Adresse bostedsadresse;
-
-    public Person(Kontaktinformasjon kontaktinformasjon, Adresse postadresse, Identifikator fodselsnummer, Personnavn navn, Date fodselsdato, Adresse bostedsadresse) {
-        super(kontaktinformasjon, postadresse);
-        this.fodselsnummer = fodselsnummer;
-        this.navn = navn;
-        this.fodselsdato = fodselsdato;
-        this.bostedsadresse = bostedsadresse;
-    }
+    private Sprak malform;
+    private Sprak morsmal;
 
     @JsonIgnore
     @Override
     public String getId() {
-        return getFodselsnummer().getIdentifikatorverdi();
+        return this.getFodselsnummer().getIdentifikatorverdi();
+    }
+
+    public enum Relasjonsnavn {
+        STATSBORGERSKAP,
+        KJONN,
+        ELEV
     }
 }
+
