@@ -33,7 +33,8 @@ public class Person extends Aktor implements Identifiable {
     public enum Relasjonsnavn {
         STATSBORGERSKAP,
         KJONN,
-        ELEV
+        ELEV,
+        PERSONALRESSURS
     }
 }
 
