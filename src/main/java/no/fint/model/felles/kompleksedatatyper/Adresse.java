@@ -14,6 +14,7 @@ public class Adresse {
     private String adresse;
     private String postnummer;
     private String poststed;
+
     public enum Relasjonsnavn {
         LAND
     }
