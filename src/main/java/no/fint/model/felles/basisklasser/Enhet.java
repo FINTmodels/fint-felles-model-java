@@ -1,24 +1,19 @@
 package no.fint.model.felles.basisklasser;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import no.fint.model.felles.kompleksedatatyper.Adresse;
+import lombok.NoArgsConstructor;
+
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
-import no.fint.model.relation.Identifiable;
+import no.fint.model.felles.kompleksedatatyper.Adresse;
+import no.fint.model.felles.basisklasser.Aktor;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
-public abstract class Enhet extends Aktor implements Identifiable {
-    private Identifikator organisasjonsnummer;
-    private String organisasjonsnavn;
-    private Adresse forretningsadresse;
-
-    @JsonIgnore
-    @Override
-    public String getId() {
-        return this.getOrganisasjonsnummer().getIdentifikatorverdi();
-    }
-}
+@EqualsAndHashCode(callSuper=false)
+public abstract class Enhet extends Aktor {
+	private Identifikator organisasjonsnummer;
+	private String organisasjonsnavn;
+	private Adresse forretningsadresse;
+	}
 

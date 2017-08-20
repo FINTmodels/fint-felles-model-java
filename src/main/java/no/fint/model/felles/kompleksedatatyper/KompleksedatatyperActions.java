@@ -7,6 +7,7 @@ public enum KompleksedatatyperActions {
 
     ;
 
+
     /**
      * Gets a list of all enums as string
      *

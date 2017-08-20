@@ -9,6 +9,7 @@ public enum FellesActions {
     GET_ALL_PERSON,
     UPDATE_PERSON;
 
+
     /**
      * Gets a list of all enums as string
      *
