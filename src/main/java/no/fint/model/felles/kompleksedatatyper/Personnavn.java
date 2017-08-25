@@ -1,3 +1,5 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles.kompleksedatatyper;
 
 import lombok.AllArgsConstructor;
@@ -10,8 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Personnavn {
-    private String fornavn;
     private String etternavn;
+    private String fornavn;
     private String mellomnavn;
 }
 

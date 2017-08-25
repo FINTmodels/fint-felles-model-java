@@ -1,3 +1,5 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles.kompleksedatatyper;
 
 import lombok.AllArgsConstructor;
@@ -10,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Identifikator {
-    private String identifikatorverdi;
     private Periode gyldighetsperiode;
+    private String identifikatorverdi;
 }
 

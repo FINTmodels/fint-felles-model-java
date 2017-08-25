@@ -1,17 +1,13 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles.basisklasser;
 
 import java.util.Arrays;
 import java.util.List;
 
 public enum BasisklasserActions {
-	
-	GET_FYLKE,
-	GET_ALL_FYLKE,
-	UPDATE_FYLKE,
-	GET_KOMMUNE,
-	GET_ALL_KOMMUNE,
-	UPDATE_KOMMUNE
-	;
+
+    ;
 
 
     /**

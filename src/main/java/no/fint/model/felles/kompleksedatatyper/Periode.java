@@ -1,3 +1,5 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles.kompleksedatatyper;
 
 import lombok.AllArgsConstructor;
@@ -12,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Periode {
-    private Date start;
     private Date slutt;
+    private Date start;
 }
 

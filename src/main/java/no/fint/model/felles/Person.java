@@ -1,9 +1,10 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import no.fint.model.felles.basisklasser.Aktor;
-import no.fint.model.felles.basisklasser.iso.Sprak;
 import no.fint.model.felles.kompleksedatatyper.Adresse;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.kompleksedatatyper.Personnavn;
@@ -16,15 +17,16 @@ public class Person extends Aktor {
     public enum Relasjonsnavn {
         STATSBORGERSKAP,
         KJONN,
+        MALFORM,
+        PERSONALRESSURS,
+        MORSMAL,
         ELEV
     }
 
-    private Identifikator fodselsnummer;
-    private Personnavn navn;
-    private Date fodselsdato;
     private String bilde;
     private Adresse bostedsadresse;
-    private Sprak malform;
-    private Sprak morsmal;
+    private Date fodselsdato;
+    private Identifikator fodselsnummer;
+    private Personnavn navn;
 }
 

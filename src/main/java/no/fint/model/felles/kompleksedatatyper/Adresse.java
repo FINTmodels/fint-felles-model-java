@@ -1,3 +1,5 @@
+// Built from tag v1.1.0-rc2
+
 package no.fint.model.felles.kompleksedatatyper;
 
 import lombok.AllArgsConstructor;
