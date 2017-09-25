@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc2
+// Built from tag v1.1.0-rc3
 
 package no.fint.model.felles.kompleksedatatyper;
 
@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum KompleksedatatyperActions {
-
-    ;
+	
+	;
 
 
     /**

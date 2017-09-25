@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc2
+// Built from tag v1.1.0-rc3
 
 package no.fint.model.felles.kompleksedatatyper;
 
@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Adresse {
-    public enum Relasjonsnavn {
-        LAND
-    }
+	public enum Relasjonsnavn {
+			LAND
+	}
 
-    private String adresse;
-    private String postnummer;
-    private String poststed;
-}
+	private String adresse;
+	private String postnummer;
+	private String poststed;
+	}
 

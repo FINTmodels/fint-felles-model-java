@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc2
+// Built from tag v1.1.0-rc3
 
 package no.fint.model.felles.kompleksedatatyper;
 
@@ -14,7 +14,8 @@ import java.util.Date;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Periode {
-    private Date slutt;
-    private Date start;
-}
+	private String beskrivelse;
+	private Date slutt;
+	private Date start;
+	}
 

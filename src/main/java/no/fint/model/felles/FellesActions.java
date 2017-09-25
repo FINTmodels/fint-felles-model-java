@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc2
+// Built from tag v1.1.0-rc3
 
 package no.fint.model.felles;
 
@@ -6,10 +6,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum FellesActions {
-
-    GET_PERSON,
-    GET_ALL_PERSON,
-    UPDATE_PERSON;
+	
+	GET_PERSON,
+	GET_ALL_PERSON,
+	UPDATE_PERSON
+	;
 
 
     /**
