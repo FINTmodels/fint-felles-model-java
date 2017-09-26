@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc3
+// Built from tag v2.0.0
 
 package no.fint.model.felles.kompleksedatatyper;
 
@@ -7,14 +7,12 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import no.fint.model.felles.kompleksedatatyper.Periode;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Identifikator {
-	private Periode gyldighetsperiode;
-	private String identifikatorverdi;
-	}
+    private Periode gyldighetsperiode;
+    private String identifikatorverdi;
+}
 

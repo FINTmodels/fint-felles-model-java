@@ -1,4 +1,4 @@
-// Built from tag v1.1.0-rc3
+// Built from tag v2.0.0
 
 package no.fint.model.felles.kompleksedatatyper;
 
@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Kontaktinformasjon {
-	private String epostadresse;
-	private String mobiltelefonnummer;
-	private String nettsted;
-	private String sip;
-	private String telefonnummer;
-	}
+    private String epostadresse;
+    private String mobiltelefonnummer;
+    private String nettsted;
+    private String sip;
+    private String telefonnummer;
+}
 
