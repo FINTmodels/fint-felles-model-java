@@ -6,14 +6,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Personnavn {
-    private String etternavn;
-    private String fornavn;
-    private String mellomnavn;
-}
+	private String etternavn;
+	private String fornavn;
+	private String mellomnavn;
+	}
 

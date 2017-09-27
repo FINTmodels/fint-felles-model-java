@@ -6,13 +6,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import java.util.List;
+
+import no.fint.model.felles.kompleksedatatyper.Periode;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Identifikator {
-    private Periode gyldighetsperiode;
-    private String identifikatorverdi;
-}
+	private Periode gyldighetsperiode;
+	private String identifikatorverdi;
+	}
 

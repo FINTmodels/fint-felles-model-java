@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
 import java.util.List;
 
 @Data
@@ -14,11 +13,12 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Adresse {
-    private List<String> adresselinje;
-    private String postnummer;
-    private String poststed;
-    public enum Relasjonsnavn {
-        LAND
-    }
-}
+	public enum Relasjonsnavn {
+			LAND
+	}
+
+	private List<String> adresselinje;
+	private String postnummer;
+	private String poststed;
+	}
 
