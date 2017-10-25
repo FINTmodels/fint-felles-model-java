@@ -26,7 +26,7 @@ apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.1
 dependencies {
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 
-    testCompile('no.fint:fint-model-test-utils:1.1.1')
+    testCompile('no.fint:fint-model-test-utils:1.1.2')
 }
 
 task wrapper(type: Wrapper) {
