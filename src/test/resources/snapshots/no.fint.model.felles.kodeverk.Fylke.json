@@ -1,17 +1,18 @@
 {
   "gyldighetsperiode" : {
-    "beskrivelse" : "yVQQQOoFsVqg",
-    "slutt" : 1490609677960,
-    "start" : 1332171831252
+    "beskrivelse" : "XtFGqTdJYUebfyBHVYMgwkOFSFpLiw",
+    "slutt" : 1851683892014,
+    "start" : 1376800898239
   },
-  "kode" : "ckTdXgwWXOtSQsbuLeQTYXch",
-  "navn" : "Kgnz",
+  "kode" : "OpALlTzEbdGAGoVBcjCnEs",
+  "navn" : "SLrZai",
+  "passiv" : true,
   "systemId" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "kzqJ",
-      "slutt" : 1373733858141,
-      "start" : 1525589001907
+      "beskrivelse" : "jaUcWWTwKOwYATVbbTIvfGGu",
+      "slutt" : 1291218197093,
+      "start" : 1766692491913
     },
-    "identifikatorverdi" : "xodzed"
+    "identifikatorverdi" : "oq"
   }
 }
