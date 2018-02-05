@@ -1,4 +1,4 @@
-// Built from tag v2.2.20
+// Built from tag v2.4.0-rc-4
 
 package no.fint.model.felles.basisklasser;
 
@@ -23,6 +23,7 @@ public abstract class Begrep implements FintAbstractObject {
     private String kode;
     @NonNull
     private String navn;
+    private Boolean passiv;
     @NonNull
     private Identifikator systemId;
 }
