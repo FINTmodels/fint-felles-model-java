@@ -1,6 +1,6 @@
-// Built from tag v2.4.0
+// Built from tag v2.4.0-rc-4
 
-package no.fint.model.felles.kompleksedatatyper;
+package no.fint.model.administrasjon.kompleksedatatyper;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,13 +14,14 @@ import no.fint.model.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Adresse implements FintComplexDatatypeObject {
+public class Fasttillegg implements FintComplexDatatypeObject {
     public enum Relasjonsnavn {
-            LAND
+            LONNSART,
+            KONTOSTRENG
     }
 
     @NonNull
-    private List<String> adresselinje;
-    private String postnummer;
-    private String poststed;
+    private Long belop;
+    @NonNull
+    private String beskrivelse;
 }
