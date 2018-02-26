@@ -1,4 +1,4 @@
-// Built from tag v2.6.0-beta-1
+// Built from tag v0.99.0
 
 package no.fint.model.felles;
 
@@ -22,6 +22,7 @@ import no.fint.model.felles.basisklasser.Aktor;
 @ToString(callSuper=true)
 public class Person extends Aktor implements FintMainObject {
     public enum Relasjonsnavn {
+            RETTIGHET,
             STATSBORGERSKAP,
             KJONN,
             MALFORM,
