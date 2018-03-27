@@ -8,7 +8,8 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
-import no.fint.model.*;
+import no.fint.model.FintComplexDatatypeObject;
+
 
 @Data
 @NoArgsConstructor

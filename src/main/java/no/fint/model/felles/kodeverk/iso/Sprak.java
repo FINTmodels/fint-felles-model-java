@@ -6,14 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import no.fint.model.*;
-
+import lombok.NonNull;
+import java.util.List;
+import no.fint.model.FintMainObject;
+import no.fint.model.relation.felles.kodeverk.iso.SprakRelation;
 import no.fint.model.felles.basisklasser.Begrep;
-import no.fint.model.relation.felles.SprakRelation;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Sprak extends Begrep implements SprakRelation,FintMainObject {
+public class Sprak extends Begrep implements FintMainObject,SprakRelation {
 }

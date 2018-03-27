@@ -6,14 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import no.fint.model.*;
-
+import lombok.NonNull;
+import java.util.List;
+import no.fint.model.FintMainObject;
+import no.fint.model.relation.felles.kodeverk.iso.KjonnRelation;
 import no.fint.model.felles.basisklasser.Begrep;
-import no.fint.model.relation.felles.KjonnRelation;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Kjonn extends Begrep implements KjonnRelation, FintMainObject {
+public class Kjonn extends Begrep implements FintMainObject,KjonnRelation {
 }
