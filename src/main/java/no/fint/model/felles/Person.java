@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
-import java.util.List;
 import no.fint.model.*;
 
 import no.fint.model.felles.kompleksedatatyper.Adresse;
@@ -15,6 +14,7 @@ import java.util.Date;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.kompleksedatatyper.Personnavn;
 import no.fint.model.felles.basisklasser.Aktor;
+import no.fint.model.relation.felles.PersonRelation;
 
 @Data
 @NoArgsConstructor
