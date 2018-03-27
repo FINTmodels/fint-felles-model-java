@@ -20,7 +20,7 @@ import no.fint.model.felles.basisklasser.Aktor;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Person extends Aktor implements FintMainObject {
+public class Person extends Aktor implements PersonRelation,FintMainObject {
     public enum Relasjonsnavn {
             STATSBORGERSKAP,
             KJONN,

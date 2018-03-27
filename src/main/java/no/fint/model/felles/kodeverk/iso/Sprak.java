@@ -16,5 +16,5 @@ import no.fint.model.felles.basisklasser.Begrep;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Sprak extends Begrep implements FintComplexDatatypeObject {
+public class Sprak extends Begrep implements SprakRelation,FintMainObject {
 }

@@ -16,5 +16,5 @@ import no.fint.model.felles.basisklasser.Begrep;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Kjonn extends Begrep implements FintComplexDatatypeObject {
+public class Kjonn extends Begrep implements KjonnRelation, FintMainObject {
 }

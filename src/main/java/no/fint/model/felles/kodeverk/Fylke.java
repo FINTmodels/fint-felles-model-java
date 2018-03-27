@@ -16,7 +16,7 @@ import no.fint.model.felles.basisklasser.Begrep;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Fylke extends Begrep implements FintComplexDatatypeObject {
+public class Fylke extends Begrep implements FintMainObject {
     public enum Relasjonsnavn {
             KOMMUNE
     }
