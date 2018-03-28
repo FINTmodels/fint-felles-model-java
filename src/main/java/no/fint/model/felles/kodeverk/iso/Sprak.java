@@ -9,12 +9,11 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintMainObject;
-import no.fint.model.relation.felles.kodeverk.iso.SprakRelation;
 import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Sprak extends Begrep implements FintMainObject,SprakRelation {
+public class Sprak extends Begrep implements FintMainObject {
 }

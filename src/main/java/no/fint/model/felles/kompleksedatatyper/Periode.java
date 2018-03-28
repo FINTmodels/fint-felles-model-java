@@ -9,7 +9,6 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintComplexDatatypeObject;
-
 import java.util.Date;
 
 @Data

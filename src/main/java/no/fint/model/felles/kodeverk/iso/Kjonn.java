@@ -9,12 +9,11 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintMainObject;
-import no.fint.model.relation.felles.kodeverk.iso.KjonnRelation;
 import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Kjonn extends Begrep implements FintMainObject,KjonnRelation {
+public class Kjonn extends Begrep implements FintMainObject {
 }

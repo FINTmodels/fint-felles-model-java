@@ -9,14 +9,13 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintMainObject;
-import no.fint.model.relation.felles.kodeverk.FylkeRelation;
 import no.fint.model.felles.basisklasser.Begrep;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Fylke extends Begrep implements FintMainObject,FylkeRelation {
+public class Fylke extends Begrep implements FintMainObject {
     public enum Relasjonsnavn {
             KOMMUNE
     }

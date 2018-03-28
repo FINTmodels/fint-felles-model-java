@@ -10,7 +10,6 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintComplexDatatypeObject;
 
-
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode

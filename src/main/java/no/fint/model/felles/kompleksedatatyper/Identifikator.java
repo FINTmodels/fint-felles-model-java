@@ -9,7 +9,6 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintComplexDatatypeObject;
-
 import no.fint.model.felles.kompleksedatatyper.Periode;
 
 @Data

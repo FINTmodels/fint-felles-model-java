@@ -9,7 +9,6 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintMainObject;
-import no.fint.model.relation.felles.PersonRelation;
 import no.fint.model.felles.kompleksedatatyper.Adresse;
 import java.util.Date;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
@@ -20,7 +19,7 @@ import no.fint.model.felles.basisklasser.Aktor;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper=true)
 @ToString(callSuper=true)
-public class Person extends Aktor implements FintMainObject,PersonRelation {
+public class Person extends Aktor implements FintMainObject {
     public enum Relasjonsnavn {
             STATSBORGERSKAP,
             KJONN,
