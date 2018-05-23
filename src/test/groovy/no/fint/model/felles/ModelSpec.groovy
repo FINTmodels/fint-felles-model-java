@@ -11,12 +11,13 @@ class ModelSpec extends Specification {
         jsonSnapshots = new JsonSnapshots(this)
     }
 
-    @Requires({ Boolean.valueOf(sys['CREATE_SNAPSHOTS']) })
+    @Requires({ env.CREATE_SNAPSHOTS })
     def "Create snapshots"() {
         expect:
         jsonSnapshots.create()
     }
 
+    @Requires({ env.VALIDATE_SNAPSHOTS })
     def "Matches snapshots"() {
         expect:
         jsonSnapshots.matchesSnapshots()

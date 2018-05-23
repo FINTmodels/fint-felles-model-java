@@ -1,18 +1,18 @@
 {
   "gyldighetsperiode" : {
-    "beskrivelse" : "XtFGqTdJYUebfyBHVYMgwkOFSFpLiw",
-    "slutt" : 1851683892014,
-    "start" : 1376800898239
+    "beskrivelse" : "EGMDN",
+    "slutt" : 1341787342027,
+    "start" : 1694333689664
   },
-  "kode" : "OpALlTzEbdGAGoVBcjCnEs",
-  "navn" : "SLrZai",
-  "passiv" : true,
+  "kode" : "VFj",
+  "navn" : "zsTDJdIYFSefKQClniaxXI",
+  "passiv" : false,
   "systemId" : {
     "gyldighetsperiode" : {
-      "beskrivelse" : "jaUcWWTwKOwYATVbbTIvfGGu",
-      "slutt" : 1291218197093,
-      "start" : 1766692491913
+      "beskrivelse" : "LwzbnpWeyNSkQHBtVUtEd",
+      "slutt" : 1654096441623,
+      "start" : 1458378148053
     },
-    "identifikatorverdi" : "oq"
+    "identifikatorverdi" : "DwBYbTzxETNuBcLQljWU"
   }
 }
