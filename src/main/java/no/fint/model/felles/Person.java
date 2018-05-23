@@ -1,4 +1,4 @@
-// Built from tag v2.7.0
+// Built from tag v2.8.0
 
 package no.fint.model.felles;
 
@@ -27,6 +27,7 @@ public class Person extends Aktor implements FintMainObject {
             MALFORM,
             PERSONALRESSURS,
             MORSMAL,
+            PARORENDE,
             ELEV
     }
 

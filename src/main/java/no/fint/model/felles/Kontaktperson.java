@@ -1,6 +1,6 @@
 // Built from tag v2.8.0
 
-package no.fint.model.felles.kompleksedatatyper;
+package no.fint.model.felles;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,14 +10,18 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
-import no.fint.model.felles.kompleksedatatyper.Periode;
-
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Identifikator implements FintComplexDatatypeObject {
-    private Periode gyldighetsperiode;
+public class Kontaktperson implements FintMainObject {
+    public enum Relasjonsnavn {
+            KONTAKTPERSON,
+            PERSON
+    }
+
     @NonNull
-    private String identifikatorverdi;
+    private Boolean foreldreansvar;
+    @NonNull
+    private String type;
 }
