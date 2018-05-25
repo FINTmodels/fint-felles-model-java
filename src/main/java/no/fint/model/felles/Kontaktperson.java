@@ -10,6 +10,8 @@ import lombok.NonNull;
 import java.util.List;
 import no.fint.model.*;
 
+import no.fint.model.felles.kompleksedatatyper.Identifikator;
+
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
@@ -22,6 +24,8 @@ public class Kontaktperson implements FintMainObject {
 
     @NonNull
     private Boolean foreldreansvar;
+    @NonNull
+    private Identifikator systemId;
     @NonNull
     private String type;
 }
