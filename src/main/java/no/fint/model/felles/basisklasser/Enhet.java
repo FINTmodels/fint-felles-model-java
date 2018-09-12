@@ -8,8 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
-import no.fint.model.*;
-
+import no.fint.model.FintAbstractObject;
 import no.fint.model.felles.kompleksedatatyper.Adresse;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 import no.fint.model.felles.basisklasser.Aktor;
