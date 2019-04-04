@@ -1,4 +1,4 @@
-// Built from tag v3.1.0
+// Built from tag v3.2.0-rc-1
 
 package no.fint.model.felles;
 
@@ -9,6 +9,8 @@ import lombok.ToString;
 import lombok.NonNull;
 import java.util.List;
 import no.fint.model.FintMainObject;
+import no.fint.model.felles.kompleksedatatyper.Kontaktinformasjon;
+import no.fint.model.felles.kompleksedatatyper.Personnavn;
 import no.fint.model.felles.kompleksedatatyper.Identifikator;
 
 @Data
@@ -21,8 +23,11 @@ public class Kontaktperson implements FintMainObject {
             PERSON
     }
 
+    @Deprecated
     @NonNull
     private Boolean foreldreansvar;
+    private Kontaktinformasjon kontaktinformasjon;
+    private Personnavn navn;
     @NonNull
     private Identifikator systemId;
     @NonNull

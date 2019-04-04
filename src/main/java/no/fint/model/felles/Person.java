@@ -1,4 +1,4 @@
-// Built from tag v3.1.0
+// Built from tag v3.2.0-rc-1
 
 package no.fint.model.felles;
 
@@ -23,10 +23,12 @@ public class Person extends Aktor implements FintMainObject {
     public enum Relasjonsnavn {
             STATSBORGERSKAP,
             KJONN,
+            FORELDREANSVAR,
             MALFORM,
             PERSONALRESSURS,
             MORSMAL,
             PARORENDE,
+            FORELDRE,
             ELEV
     }
 
